@@ -1,0 +1,8 @@
+<p><%= @jobs.title %></p>
+<p><%= @jobs.company.location %></p>
+<p><%= @jobs.company.name %></p>
+<p><%= @jobs.description %></p>
+
+<a href="/jobs">Back</a>
+
+<%= form_for :job, :method => :delete do  %> <%= submit_tag "Destroy" %>  <% end %>
